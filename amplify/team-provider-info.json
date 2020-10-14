@@ -1,22 +1,22 @@
 {
-    "live": {
-        "awscloudformation": {
-            "AuthRoleName": "amplify-athleticspecific-live-103101-authRole",
-            "UnauthRoleArn": "arn:aws:iam::752297506265:role/amplify-athleticspecific-live-103101-unauthRole",
-            "AuthRoleArn": "arn:aws:iam::752297506265:role/amplify-athleticspecific-live-103101-authRole",
-            "Region": "us-west-2",
-            "DeploymentBucketName": "amplify-athleticspecific-live-103101-deployment",
-            "UnauthRoleName": "amplify-athleticspecific-live-103101-unauthRole",
-            "StackName": "amplify-athleticspecific-live-103101",
-            "StackId": "arn:aws:cloudformation:us-west-2:752297506265:stack/amplify-athleticspecific-live-103101/593b5d70-eba7-11ea-b800-0aa153520eb4",
-            "AmplifyAppId": "d3pc6mgraos7pc"
-        },
-        "categories": {
-            "auth": {
-                "athleticspecificauth": {
-                    "hostedUIProviderCreds": "[]"
-                }
-            }
+  "live": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-athleticspecific-live-103101-authRole",
+      "UnauthRoleArn": "arn:aws:iam::752297506265:role/amplify-athleticspecific-live-103101-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::752297506265:role/amplify-athleticspecific-live-103101-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-athleticspecific-live-103101-deployment",
+      "UnauthRoleName": "amplify-athleticspecific-live-103101-unauthRole",
+      "StackName": "amplify-athleticspecific-live-103101",
+      "StackId": "arn:aws:cloudformation:us-west-2:752297506265:stack/amplify-athleticspecific-live-103101/593b5d70-eba7-11ea-b800-0aa153520eb4",
+      "AmplifyAppId": "d3pc6mgraos7pc"
+    },
+    "categories": {
+      "auth": {
+        "athleticspecificauth": {
+          "hostedUIProviderCreds": "[]"
         }
+      }
     }
+  }
 }
