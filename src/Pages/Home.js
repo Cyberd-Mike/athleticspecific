@@ -12,7 +12,7 @@ export function Home(){
     const [ bannerImg, setBannerImg ] = useState();
     const [ secondaryImg, setSecondaryImg ] = useState();
     useEffect(() => {
-        Storage.get('IMG_6117.JPG')
+        Storage.get('IMG_6117.JPG', {level: 'public'})
         .then((result) => setBannerImg(result))
         .catch((err) => console.log('Error getting background image', err));
 
@@ -23,14 +23,17 @@ export function Home(){
     
     return(
         <Fragment>
-            <TopToolbar />
+            {/* <TopToolbar /> */}
             <Banner image={bannerImg} >
-                <h1>Athletic Specific</h1>
+                <Grid container justify="center" alignItems="center">
+                    <Grid item container xs={12}>
+                        <h1 style={{color: 'white', margin: '0 auto', paddingTop: '5%'}}>Athletic Specific</h1>
+                    </Grid>
+                </Grid>
             </Banner>
-            {/* <img className="MountianImage" src={secondaryImg} /> */}
             <Updates />
-            <ContactForm />
-            <Footer />
+            {/* <ContactForm /> */}
+            {/* <Footer /> */}
         </Fragment>
     );
 }

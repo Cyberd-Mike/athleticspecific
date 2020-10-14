@@ -5,10 +5,32 @@ $baseyellow: #D9BB25;
 $baseblue: #237294;
 $basebrown: #261612;
 
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+
+$Lora: 'Lora', serif;
+$OpenSans: 'Open Sans', sans-serif;
+
+
 body,
 html{
     margin: 0;
     overflow-x: hidden;
-    background: rgb(224,224,224);
+    background: #aaaaaa;
+    font-family: $Lora;
     // background: linear-gradient(180deg, rgba(224,224,224,1) 22%, rgba(183,183,183,1) 68%);
+}
+
+h1 {
+    font-family: $OpenSans;
+    font-size: 3em;
+}
+h2 {
+    font-family: $Lora;
+    font-size: 2em;
+}
+h3 {
+    font-family: $OpenSans;
+    font-size: 1.5em;
 }
