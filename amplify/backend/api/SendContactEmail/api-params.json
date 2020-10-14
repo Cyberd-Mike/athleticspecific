@@ -1,0 +1,44 @@
+{
+    "paths": [
+        {
+            "name": "/email",
+            "lambdaFunction": "SendContactEmailLambda",
+            "privacy": {
+                "protected": true,
+                "auth": [
+                    "/POST",
+                    "/GET",
+                    "/PUT",
+                    "/PATCH",
+                    "/DELETE"
+                ],
+                "unauth": [
+                    "/POST"
+                ]
+            }
+        }
+    ],
+    "resourceName": "SendContactEmail",
+    "apiName": "SendContactEmail",
+    "functionArns": [
+        {
+            "lambdaFunction": "SendContactEmailLambda"
+        }
+    ],
+    "privacy": {
+        "auth": 1,
+        "unauth": 1,
+        "authRoleName": "amplify-athleticspecific-live-103101-authRole",
+        "unAuthRoleName": "amplify-athleticspecific-live-103101-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "SendContactEmailLambda",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

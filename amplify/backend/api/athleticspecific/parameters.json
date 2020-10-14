@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "athleticspecific",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authathleticspecificauth",
+            "Outputs.UserPoolId"
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+$basegray: #19100B;
+$lightgray: #aaaaaa;
+$basewhite: #E9EFF2;
+$baseyellow: #D9BB25;
+$baseblue: #237294;
+$basebrown: #261612;
+
+body,
+html{
+    margin: 0;
+    overflow-x: hidden;
+    background: rgb(224,224,224);
+    // background: linear-gradient(180deg, rgba(224,224,224,1) 22%, rgba(183,183,183,1) 68%);
+}

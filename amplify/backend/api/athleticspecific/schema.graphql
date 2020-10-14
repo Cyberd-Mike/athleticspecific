@@ -1,0 +1,11 @@
+type Update @model 
+@key(name: "dateCreated", fields: ["createdAt"], queryField: "dateCreated")
+{
+	id: ID!
+	title: String!
+	createdAt: AWSDateTime!
+	content: String!
+	published: Boolean!
+	image: String
+	author: String
+}
